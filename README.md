@@ -10,20 +10,16 @@ Navigating healthcare can be overwhelming, but CareCompanion ensures that women 
 From scheduling appointments and tracking health records to connecting with specialists and accessing personalized wellness plans, CareCompanion simplifies the healthcare journey for women, empowering them to take charge of their well-being.
 
 ___
-## TechStack
-ExpressJS
-MongoDB
-React.js
-
-___
 ## Dependencies
 You need npm/yarn installed in your local machine in order to run this app.
 
 ___
 ## Installation
 Frontend
-  `npm install`
-  `npm run dev`
+  ```
+  bashnpm install
+  ````
+  npm run dev  
 ___
 ## How To SetUp
 - Make sure your machine has an internet connection.
