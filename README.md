@@ -4,28 +4,28 @@ We welcome all female contributors! CareCompanion is a web development project d
 
 ___
 
-##What Problem Does CareCompanion Solve?
+## What Problem Does CareCompanion Solve?
 Navigating healthcare can be overwhelming, but CareCompanion ensures that women have access to tailored healthcare solutions at their fingertips.
 
 From scheduling appointments and tracking health records to connecting with specialists and accessing personalized wellness plans, CareCompanion simplifies the healthcare journey for women, empowering them to take charge of their well-being.
 
 ___
-##TechStack
+## TechStack
 ExpressJS
 MongoDB
 React.js
 
 ___
-##Dependencies
+## Dependencies
 You need npm/yarn installed in your local machine in order to run this app.
 
 ___
-##Installation
+## Installation
 Frontend
   `npm install`
   `npm run dev`
 ___
-##How To SetUp
+## How To SetUp
 - Make sure your machine has an internet connection.
 - Fork the repository.
 - Open the shell (whichever your OS supports) on your PC.
