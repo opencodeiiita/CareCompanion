@@ -16,10 +16,11 @@ You need npm/yarn installed in your local machine in order to run this app.
 ___
 ## Installation
 Frontend
-  ```
-  bashnpm install
-  ````
-  npm run dev  
+  ```bash
+npm install
+
+  ```bash
+  npm start  
 ___
 ## How To SetUp
 - Make sure your machine has an internet connection.
