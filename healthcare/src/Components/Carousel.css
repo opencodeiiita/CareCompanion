@@ -1,0 +1,112 @@
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .carousel-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .carousel-image {
+    width: 50%;
+    border-radius: 8px;
+    padding-left: 40px; /* Adjust this value to make space for the left arrow */
+  }
+  
+  .carousel-text {
+    width: 45%;
+    text-align: left;
+  }
+  
+  .carousel-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-author {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+    background: transparent;
+    border: none;
+    outline: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  
+  .carousel-arrow:hover {
+    transform: translateY(-50%) scale(1.2);
+    opacity: 0.7;
+  }
+  
+  .left-arrow {
+    left: 10px;
+  }
+  
+  .right-arrow {
+    right: 10px;
+  }
+  
+  .carousel-arrow {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .carousel-arrow:hover {
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.3);
+  }
+  
+  .carousel-pagination {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .carousel-dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: #ccc;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .carousel-dot.active {
+    background: #d15656;
+  }
+  
