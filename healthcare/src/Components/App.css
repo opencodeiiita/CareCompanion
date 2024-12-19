@@ -1,0 +1,111 @@
+.footer {
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+  color: #333;
+}
+
+.footer__subscribe {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.subscribe__box {
+  background-color: #d4295c;
+  padding: 30px;
+  border-radius: 10px;
+  width: 60%;
+  text-align: center;
+}
+
+.subscribe__box h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.subscribe__box p {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.subscribe__form {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe__form input {
+  padding: 10px;
+  width: 250px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.subscribe__form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer__columns {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 20px;
+}
+
+.column {
+  padding: 10px;
+}
+
+.column h3 {
+  color: #c9315e;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.column ul li {
+  margin-bottom: 8px;
+}
+
+.social__icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social__icons svg {
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+.footer__whatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer__whatsapp a {
+  display: flex;
+  align-items: center;
+  background-color: #25d366;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.footer__whatsapp svg {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
