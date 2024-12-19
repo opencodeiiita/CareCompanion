@@ -1,115 +1,104 @@
-import React, { useState } from "react";
-import "./styles.css";
+import React from 'react';
+import { FaInstagram, FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube, FaWhatsapp } from 'react-icons/fa';
+import './App.css';
 
-const App = () => {
-  const [searchQuery, setSearchQuery] = useState("");
-  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
-
-  const handleSearch = () => {
-    console.log("Search Query: ", searchQuery);
-  };
-
-  const openLoginModal = () => {
-    setIsLoginModalOpen(true);
-  };
-
-  const closeLoginModal = () => {
-    setIsLoginModalOpen(false);
-  };
-
+const Footer = () => {
   return (
-    <div className="app">
-      <header className="navbar">
-        
-        <div className="navbar-logo">
-          <h4>Proactive For Her</h4>
+    <footer className="footer">
+    {/* Subscribe Newsletter Section */}
+    <div className="footer__subscribe">
+      <div className="subscribe__box">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay updated with the latest news and tips on women’s health, wellness, and more!</p>
+        <div className="subscribe__form">
+          <input type="email" placeholder="Enter your email" />
+          <button type="submit">Subscribe</button>
         </div>
-
-        
-        <nav className="navbar-links">
-          <div className="dropdown">
-            <a href="#" className="dropbtn">Care for Her</a>
-            <div className="dropdown-content horizontal-dropdown">
-              <DropdownSection title="What We Treat" items={[
-                { href: "#sexual-health", label: "Sexual Health" },
-                { href: "#menstrual-health", label: "Menstrual Health" },
-                { href: "#pcos", label: "PCOS" },
-                { href: "#painful-sex", label: "Painful Sex & Vaginitis" },
-                { href: "#pelvic-health", label: "Pelvic Health" },
-                { href: "#cancer-prevention", label: "Cancer Prevention" },
-                { href: "#fertility", label: "Fertility" },
-                { href: "#postpartum", label: "Postpartum" },
-                { href: "#mental-health", label: "Mental Health" },
-                { href: "#pregnancy", label: "Pregnancy" },
-              ]} />
-              <DropdownSection title="Our Services" items={[
-                { href: "#consultation", label: "Consultation" },
-                { href: "#lab-tests", label: "Lab Tests" },
-                { href: "#vaccinations", label: "Vaccinations" },
-                { href: "#scans-procedures", label: "Scans & Procedures" },
-              ]} />
-              <DropdownSection title="Our Experts" items={[
-                { href: "#gynecologist", label: "Gynecologist" },
-                { href: "#fertility-specialist", label: "Fertility Specialist" },
-                { href: "#physiotherapist", label: "Physiotherapist" },
-                { href: "#nutritionist", label: "Nutritionist" },
-                { href: "#dermatologist", label: "Dermatologist" },
-                { href: "#psychologist", label: "Psychologist" },
-                { href: "#lactation-specialist", label: "Lactation Specialist" },
-                { href: "#pediatrician", label: "Pediatrician" },
-              ]} />
-            </div>
-          </div>
-          <a href="#locations">Locations</a>
-          <a href="#about-us">About Us</a>
-          <a href="#tools">Tools</a>
-        </nav>
-
-       
-        <div className="navbar-search">
-          <input
-            type="text"
-            placeholder="Search"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-          />
-          <button onClick={handleSearch}>Search</button>
-        </div>
-
-        
-        <div className="navbar-cta">
-          <button className="btn btn-book-now">Book Now</button>
-          <button className="btn btn-login" onClick={openLoginModal}>Login</button>
-        </div>
-      </header>
-
-      
-      {isLoginModalOpen && (
-        <div
-          className="modal-overlay"
-          onClick={(e) => e.target.className === "modal-overlay" && closeLoginModal()}
-        >
-          <div className="login-modal">
-            <h2>Login</h2>
-            <button onClick={closeLoginModal}>Close</button>
-          </div>
-        </div>
-      )}
+      </div>
     </div>
+  
+    {/* Box wrapping all columns */}
+    <div className="columns__box">
+      <div className="footer__columns">
+        <div className="column">
+          <h3>What We Treat</h3>
+          <ul>
+            <li>Gynecological Health</li>
+            <li>Menstrual disorders</li>
+            <li>Polycystic Ovary Syndrome (PCOS)</li>
+            <li>Endometriosis</li>
+            <li>Fibroids</li>
+            <li>Reproductive Health</li>
+            <li>Fertility support</li>
+            <li>Pregnancy and prenatal care</li>
+            <li>Mental Health</li>
+            <li>Bone health</li>
+            <li>Preventative Care</li>
+            <li>Pap smears and pelvic exams</li>
+            <li>Sexual health concerns</li>
+          </ul>
+        </div>
+  
+        <div className="column">
+          <h3>Our Experts</h3>
+          <ul>
+            <li>Obstetrician-Gynecologist (OB-GYN)</li>
+            <li>Reproductive Endocrinologist</li>
+            <li>Maternal-Fetal Medicine Specialist</li>
+            <li>Certified Nurse Midwife (CNM)</li>
+            <li>Pelvic Health Physical Therapist</li>
+            <li>Breast Health Specialist</li>
+            <li>Urogynecologist</li>
+            <li>Endocrinologist</li>
+            <li>Registered Dietitian (RD)</li>
+            <li>Oncologist</li>
+            <li>Dermatologist</li>
+            <li>Lactation Consultant</li>
+            <li>Sexual Health Specialist</li>
+          </ul>
+        </div>
+  
+        <div className="column">
+          <h3>Our Services</h3>
+          <ul>
+            <li>Consultation</li>
+            <li>Vaccination</li>
+            <li>Lab Tests</li>
+            <li>Scans and Procedures</li>
+          </ul>
+        </div>
+  
+        <div className="column">
+          <h3>News & Resources</h3>
+          <ul>
+            <li>Blog</li>
+          </ul>
+        </div>
+  
+        <div className="column">
+          <h3>Join Us</h3>
+          <div className="social__icons">
+            <FaInstagram />
+            <FaFacebookF />
+            <FaTwitter />
+            <FaLinkedinIn />
+            <FaYoutube />
+          </div>
+          <h3>Contact Us</h3>
+          <p>Phone: +123 456 7890</p>
+          <div className="footer__whatsapp">
+            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp />
+              <span>Need Help?</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
   );
 };
 
-const DropdownSection = ({ title, items }) => (
-  <div className="dropdown-section">
-    <h3>{title}</h3>
-    <ul>
-      {items.map((item, index) => (
-        <li key={index}>
-          <a href={item.href}>{item.label}</a>
-        </li>
-      ))}
-    </ul>
-  </div>
-);
+export default Footer;
 
-export default App;
