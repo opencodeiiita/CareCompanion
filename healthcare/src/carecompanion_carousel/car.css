@@ -1,0 +1,152 @@
+
+body, html {
+  height: 100%; 
+  margin: 0; 
+  background: linear-gradient(135deg, #ffffff99, #ec519ed3, #942661ca, #d4066dd1); 
+  background-size: 400% 400%; 
+ 
+}
+
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px; 
+  height: 450px; 
+  margin: auto;
+  box-sizing: border-box;
+  background: #ffffff00;
+  border-radius: 0px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); 
+  border: 3px solid #420d2700; 
+}
+
+
+.carousel-content {
+  position: absolute;
+  bottom: 10%; 
+  left: 10%;  
+  right: 10%; 
+  color: #ffffff; 
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); 
+  font-size: 1.5rem; 
+  z-index: 10;
+  max-width: 80%; 
+  line-height: 1.4; 
+  word-wrap: break-word; 
+  box-sizing: border-box; 
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5); 
+  border-radius: 0px; 
+}
+
+
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out; 
+}
+
+
+.carousel-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  height: 100%; 
+}
+
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+  filter: brightness(70%); 
+}
+
+
+.carousel-content {
+  position: absolute;
+  bottom: 15%;  
+  left: 10%;
+  color: #ffffff; 
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); 
+  font-size: 1.5rem; 
+  z-index: 10;
+  max-width: 90%;  
+  line-height: 1.4; 
+  word-wrap: break-word; 
+  padding-right: 10%; 
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(96, 96, 96, 0); 
+  color: white;
+  border: none;
+  font-size: 2.5rem; 
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%; 
+  transition: background 0.3s ease, transform 0.3s ease; 
+  z-index: 10;
+}
+
+.carousel-arrow.left {
+  left: 20px;
+}
+
+.carousel-arrow.right {
+  right: 20px;
+}
+
+
+.carousel-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7); 
+  transform: translateY(-50%) scale(1.1); 
+}
+
+
+.carousel-dots {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 8px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.dot.active {
+  background-color: #ff3399; 
+  transform: scale(1.2); 
+}
+
+
+.dot:hover {
+  background-color: #ff6600; 
+  transform: scale(1.4); 
+}
+@media (max-width: 768px) {
+  .carousel-content {
+    font-size: 1.2rem; 
+    left: 5%; 
+    bottom: 15%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-content {
+    font-size: 1rem; 
+    left: 3%; 
+    bottom: 10%; 
+  }
+}
