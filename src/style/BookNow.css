@@ -1,0 +1,89 @@
+/* Style the progress bar */
+.progress-bar {
+  background-color: #B92C55 !important;
+}
+
+/* Style selected fields */
+.selected-field {
+  background-color: #3B3F69 !important;
+  color: white !important;
+}
+.box {
+  border: 1px solid #ddd; /* Light gray border */
+  padding: 15px; /* Padding inside the box */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+/* Ensure all child elements of selected-field are white */
+.selected-field h5,
+.selected-field p {
+  color: white !important;
+}
+
+/* Change icon color to white when selected */
+.selected-field .icon-container {
+  color: white !important;
+}
+
+/* Add space between containers */
+.form-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Style the icons in the last step */
+.icon-container {
+  font-size: 1.5rem;
+  color: #3B3F69;
+}
+/* General button styles */
+.btn {
+  font-size: 1rem; /* Adjust size */
+  padding: 10px 20px; /* Adjust padding */
+  border-radius: 5px; /* Adjust border radius */
+  transition: all 0.3s ease; /* Smooth transition for hover and active states */
+  width: 10%; /*Make buttons take up full width of their container*/
+  display: block; /* Ensures buttons are block-level */
+}
+
+/* Button colors for Back, Proceed, Submit */
+
+/* Back button */
+.btn-secondary {
+  background-color: #0ba37f !important; 
+  color: white;
+  border: none;
+}
+
+
+
+/* Proceed button */
+.btn-primary {
+  background-color: #0ba37f !important; 
+  color: white;
+  border: none;
+}
+
+
+
+/* Submit button */
+.btn-success {
+  background-color: #532584 !important; /* Green color */
+  color: white;
+  border: none;
+}
+
+
+
+/* Ensure all buttons have equal height */
+.btn {
+  height: 50px; /* You can adjust this to your desired height */
+}
+
+/* Focus state */
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); /* Light blue shadow */
+}
