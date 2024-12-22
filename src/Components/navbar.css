@@ -1,0 +1,161 @@
+/* General Navbar Styling */
+.navbar {
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.navbar-logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #d5006d; /* Dark Pink Color */
+    text-decoration: none;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-menu a {
+    margin-right: 1.5rem;
+    text-decoration: none;
+    color: #d5006d; /* Dark Pink Color */
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    font-size: 1rem;
+    color: #d5006d; /* Dark Pink Color */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    background-color: #f9f9f9; /* Light background for dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    padding: 1rem;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.header {
+    font-weight: bold;
+    padding: 1rem;
+    background-color: #d5006d; /* Dark Pink Color */
+    color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    min-width: 200px;
+    padding: 1rem;
+}
+
+.column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.navbar-search input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+}
+
+.navbar-search button {
+    padding: 0.5rem;
+    border: none;
+    background: #d5006d; /* Dark Pink Color */
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.navbar-cta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.book-now, .location, .about-us {
+    background-color:#d4295c; /* Light Pink Color */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.login {
+    background-color: #edece8;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .dropdown-content {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .navbar-search {
+        margin-left: 0; /* Remove margin on smaller screens */
+    }
+
+    .navbar-cta {
+        flex-direction: column; /* Stack buttons on top of each other */
+        align-items: flex-end; /* Align to the end */
+    }
+}
