@@ -8,6 +8,7 @@ import Login from './Pages/Login';
 import BookNow from './Pages/BookNow';
 import Home from './Pages/Home';
 
+
 function App() {
   return (
     <Router>
