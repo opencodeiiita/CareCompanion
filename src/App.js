@@ -7,7 +7,8 @@ import Navbar from './Components/Navbar';
 import Login from './Pages/Login';
 import BookNow from './Pages/BookNow';
 import Home from './Pages/Home';
-
+import WhatWeTreat from "./Components/WhatWeTreat";
+import Card from "./Components/Card";
 function App() {
   return (
     <Router>
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/BookNow" element={<BookNow />} />
+          <Route path="/WhatWeTreat" element={<WhatWeTreat />} />
         </Routes>
       </div>
     </Router>
