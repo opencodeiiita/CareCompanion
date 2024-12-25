@@ -1,5 +1,5 @@
 import React from 'react';
-import "./index.css";
+import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -7,16 +7,22 @@ import Navbar from './Components/Navbar';
 import Login from './Pages/Login';
 import BookNow from './Pages/BookNow';
 import Home from './Pages/Home';
-
+import Carousel from './Components/Carousel'; // Import Carousel component
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Navbar />
+
         <Routes>
-          {/* Default route is now the Login page */}
-          <Route path="/" element={<Home />} />
+          {/* Default route includes the Home page with Carousel */}
+          <Route path="/" element={<>
+            <Carousel />
+            <Home />
+          </>} />
+
+          {/* Other routes */}
           <Route path="/login" element={<Login />} />
           <Route path="/BookNow" element={<BookNow />} />
         </Routes>
