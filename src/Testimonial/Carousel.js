@@ -1,22 +1,17 @@
-
-
 import React from "react";
-import "./Testimonial.css"; 
+import "./Testimonial.css";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import profile1 from './assets/images/profile1.jpg';
-import profile2 from './assets/images/profile2.jpg';
-import profile3 from './assets/images/profile3.jpg';
-import profile4 from './assets/images/profile4.jpg';
-import profile5 from './assets/images/profile5.jpg';
-
-
+import profile1 from "./assets/images/profile1.jpg";
+import profile2 from "./assets/images/profile2.jpg";
+import profile3 from "./assets/images/profile3.jpg";
+import profile4 from "./assets/images/profile4.jpg";
+import profile5 from "./assets/images/profile5.jpg";
 
 const TestimonialSection = () => {
   const testimonials = [
     {
-      
       text: "CareCompanion has been a lifesaver for my health journey. The support and resources are unmatched!",
       name: "Jane Doe",
       role: "Wellness Coach",
@@ -32,19 +27,19 @@ const TestimonialSection = () => {
       text: "The personalized tips and expert resources helped me regain balance in my life. I feel empowered and more in control of my health.",
       name: "Sophia Lee",
       role: "Teacher",
-      image:  profile3,
+      image: profile3,
     },
     {
       text: "Women’s health is often overlooked, but not here. I finally feel heard and supported in my health journey.",
       name: "Hannah Brown",
       role: "Freelancer",
-      image: profile4 ,
+      image: profile4,
     },
     {
       text: "I’ve finally found a space that truly understands women’s unique health needs. The insights and advice here are invaluable!",
       name: "Olivia Green",
       role: "Artist",
-      image:  profile5,
+      image: profile5,
     },
   ];
 
@@ -54,8 +49,8 @@ const TestimonialSection = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    centerMode: true, 
-    centerPadding: '20px', 
+    centerMode: true,
+    centerPadding: "20px",
     arrows: true,
     responsive: [
       {
@@ -72,8 +67,6 @@ const TestimonialSection = () => {
       },
     ],
   };
-  
-  
 
   return (
     <section className="testimonial-section">
