@@ -10,7 +10,7 @@ import Home from './Pages/Home';
 import WhatWeTreat from "./Components/WhatWeTreat";
 import Card from "./Components/Card";
 import Carousel from './Components/Carousel'; // Import Carousel component
-
+import Detailsb from './Components/Detailsb';
 function App() {
   return (
     <Router>
@@ -27,7 +27,10 @@ function App() {
           {/* Other routes */}
           <Route path="/login" element={<Login />} />
           <Route path="/BookNow" element={<BookNow />} />
-          <Route path="/WhatWeTreat" element={<WhatWeTreat />} />
+          <Route path="/WhatWeTreat" element={<>
+            <WhatWeTreat />
+            <Detailsb /> {/* Add Detailsb component below WhatWeTreat */}
+          </>} />
         </Routes>
       </div>
     </Router>
