@@ -1,0 +1,139 @@
+.testimonial-section {
+  background-color: #a6034a;
+  color: #ffffff;
+  padding: 60px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.slick-slide > div {
+  margin: 15px;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 15px;
+}
+
+.slick-prev, .slick-next {
+  font-size: 50px;
+  color: #888888 !important;
+  opacity: 1 !important;
+  position: absolute !important;
+  bottom: 10px !important;
+  z-index: 10 !important;
+}
+
+.slick-prev {
+  left: 10px !important;
+}
+
+.slick-next {
+  right: 10px !important;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  color: #ffffff !important;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slick-dots li button:before {
+  color: #ffffff !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #888888;
+}
+
+.slick-center .testimonial-card {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  border: 1px solid #dddddd;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.testimonial-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-left: 30px !important;
+  padding-bottom: 60px;
+}
+
+.testimonial-text {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.testimonial-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.testimonial-role {
+  font-size: 1.2rem;
+  color: #888;
+  padding: 5px;
+  margin-bottom: 150px;
+}
+
+.quote-icon {
+  font-size: 2rem;
+  color: #ddd;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #a40657;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
