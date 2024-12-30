@@ -8,7 +8,12 @@ import Login from './Pages/Login';
 import BookNow from './Pages/BookNow';
 import Home from './Pages/Home';
 import WhatWeTreat from "./Components/WhatWeTreat";
-import Card from "./Components/Card";
+import Menstrual from './Pages/Menstrual';
+import PCOS from './Pages/PCOS';
+import CancerPrevention from './Pages/CancerPrevention';
+import Pregnancy from './Pages/Pregnancy';
+import MentalHealth from './Pages/MentalHealth';
+import Postpartum from './Pages/Postpartum';
 import Carousel from './Components/Carousel'; // Import Carousel component
 import Detailsb from './Components/Detailsb';
 function App() {
@@ -31,6 +36,12 @@ function App() {
             <WhatWeTreat />
             <Detailsb /> {/* Add Detailsb component below WhatWeTreat */}
           </>} />
+          <Route path="/Pregnancy" element={<Pregnancy />} />
+          <Route path="/Menstrual" element={<Menstrual />} />
+          <Route path="/MentalHealth" element={<MentalHealth />} />
+          <Route path="/CancerPrevention" element={<CancerPrevention />} />
+          <Route path="/PCOS" element={<PCOS />} />
+          <Route path="/Postpartum" element={<Postpartum />} />
         </Routes>
       </div>
     </Router>

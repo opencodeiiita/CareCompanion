@@ -4,7 +4,13 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}", 
   ],
   theme: {
-    extend: {}, 
+    extend: {
+      colors: {
+        pink: "#d4295c",
+        white: "#fff",
+        lightpink: "#ffc0cb"
+      }
+    }, 
     fontFamily :{ 
       Lobster:[ "Lobster", "sans-serif"],
       Jost:["Jost", "sans-serif"],
@@ -12,5 +18,6 @@ module.exports = {
       Playfair:["Playfair Display", "serif"]
     },
   },
+
   plugins: [],
 };

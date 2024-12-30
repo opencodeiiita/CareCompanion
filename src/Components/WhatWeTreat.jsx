@@ -9,7 +9,7 @@ const WhatWeTreat = () => {
     <div className="bg-gray-50 min-h-screen p-8">
       {/* Section Header */}
       <div className="text-left mb-8">
-        <h1 className="text-4xl font-serif font-medium text-pink-600">What We Treat</h1>
+        <h1 className="text-4xl font-serif font-medium text-pink">What We Treat</h1>
         <p className="text-lg text-gray-600 mt-2">
           In-person and virtual holistic healthcare for women in areas ranging from menstrual and sexual health to cancer screenings to fertility and postpartum care. All delivered with radical empathy, clinical excellence, and no judgment.
         </p>
@@ -40,7 +40,7 @@ const WhatWeTreat = () => {
             
             {/* Hover Overlay */}
             
-            <div className="absolute inset-0 bg-pink-600 flex flex-col justify-center item-center text-left opacity-5 hover:opacity-100 transform transition-opacity duration-30ms z-0">
+            <div className="absolute inset-0 bg-pink flex flex-col justify-center item-center text-left opacity-5 hover:opacity-100 transform transition-opacity duration-30ms z-0">
                 <p className="text-lg font-bold text-white text-left ml-5 hover:opacity-100 transition-opacity">{service.title}</p>
               <p className="text-left text-white mb-4 px-4 hover:opacity-100 transition-opacity">{service.description}</p>
               <p className="text-left text-white mb-4 px-4 hover:opacity-100 transition-opacity">{service.talkToUsAbout}</p>
