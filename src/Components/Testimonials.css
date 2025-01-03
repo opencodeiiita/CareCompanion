@@ -1,0 +1,84 @@
+.testimonials {
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 2px solid #ddd;
+    background-color: #f9f9f9; /* Optional: subtle background color for contrast */
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.testimonial-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Ensures no overflow for child elements */
+}
+
+.testimonial-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.testimonial-name {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    background-color: #d5006d;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(117, 69, 69, 0.8);
+    font-size: 1rem; /* Ensures readability on small screens */
+    white-space: nowrap; /* Prevents wrapping of names */
+}
+
+.testimonial-feedback {
+    font-style: italic;
+    color: #5b3e3e;
+    line-height: 1.5;
+    margin-top: 40px;
+    font-size: 1rem; /* Consistent typography */
+}
+
+/* Carousel controls positioning */
+.carousel-control-prev, 
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem; /* Ensure larger click areas */
+    color: #333; /* Matches the theme */
+}
+
+.carousel-control-prev {
+    left: 10px; /* Slightly more spacing for better clickability */
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+/* Optional hover effect for testimonial card */
+.testimonial-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Slightly more pronounced shadow */
+    transform: translateY(-5px); /* Adds a subtle lift effect */
+    transition: 0.3s ease; /* Smooth transition */
+}
