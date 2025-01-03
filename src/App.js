@@ -17,6 +17,7 @@ import Postpartum from './Pages/Postpartum';
 import Carousel from './Components/Carousel'; // Import Carousel component
 import Detailsb from './Components/Detailsb';
 import About from './Pages/About';
+import TeamIntro from './Pages/TeamIntro';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
           <Route path="/PCOS" element={<PCOS />} />
           <Route path="/Postpartum" element={<Postpartum />} />
           <Route path="/About" element={<About />} />
+          <Route path="/TeamIntro" element={<TeamIntro />} />
         </Routes>
       </div>
     </Router>
