@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
-
+import '../Pages/Story';
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -63,7 +63,7 @@ const Navbar = () => {
           <Link to="/BookNow" className="book-now">Book Now</Link>
           <Link to="/login" className="login">Login</Link>
           <Link to="/location" className="location">Location</Link>
-          <Link to="/about" className="about-us">About Us</Link>
+          <Link to="/About" className="about-us">About Us</Link>
         </div>
       </div>
     </div>
