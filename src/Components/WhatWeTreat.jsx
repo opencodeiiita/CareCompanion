@@ -22,8 +22,8 @@ const WhatWeTreat = () => {
             key={service.id}
             className="relative shadow-lg rounded-lg transition-transform transform hover:scale-105 group"
           >
-            <div className="relative w-full h-72">
-            {/* Image */}
+           <div className="relative w-full h-72">
+            { /* Image */}
             <img
               src={service.imageUrl}
               alt={service.title}
