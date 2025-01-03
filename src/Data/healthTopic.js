@@ -10,8 +10,7 @@ const healthTopics = [
       content:
         "Menstrual health involves understanding the menstrual cycle, addressing irregularities, and adopting good hygiene practices. The menstrual cycle consists of four phases: menstruation, the follicular phase, ovulation, and the luteal phase. Common issues include cramps, heavy flow, and premenstrual syndrome (PMS), which can affect daily life. To manage pain, strategies such as using heat packs, light exercise, and over-the-counter painkillers like ibuprofen can be effective. Proper hygiene is crucial; using clean menstrual products, changing them frequently, and avoiding harsh soaps can prevent infections like bacterial vaginosis. Tracking cycles with apps can help identify irregularities, signaling potential issues like hormonal imbalances or conditions such as PCOS or endometriosis. For persistent issues, consulting a healthcare provider is vital for timely diagnosis and treatment.",
       link:
-      "/Menstrual",
-      treatments:["PCOS testing","Gynaecology consultation","Irregular Period panel","Full package blood test"]
+      "/Menstrual"
       
       },
     {
